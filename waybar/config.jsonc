@@ -1,0 +1,97 @@
+{
+  // Waybar at top layer
+  "layer": "top",
+  "reload_on_style_change": true,
+
+  // Waybar position (top|bottom|left|right)
+  "position": "top",
+
+  // Waybar height (to be removed for auto height)
+  // "height": 10,
+
+  "passthrough": false,
+  "reload_style_on_change": true,
+
+  // Gaps between modules (4px)
+  "spacing": 10,
+
+  // Gap from the top of the screen
+  "margin-top": 0,
+  "margin-left": 5,
+  "margin-right": 5,
+  "margin-bottom": 1,
+
+  "modules-left": [
+	  "custom/icon",
+    "clock",
+    "custom/weather",
+    ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "pulseaudio/slider",
+    "tray",
+    "custom/lock"
+  ],
+  "custom/icon": {
+    "format": "󰣇"
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+  "clock": {
+    "timezone": "America/Sao_Paulo",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%d/%m/%Y | %H:%M}"
+  },
+  "custom/weather": {
+    "format": "󰖐  {}",
+    "tooltip": true,
+    "interval": 1800,
+    "exec": "curl -s 'https://wttr.in/-27.6369,-48.6706?format=%t' | sed 's/+//g; s/C//g'",
+    "return-type": "text",
+    "on-click": "xdg-open https://wttr.in/Jabaquara"
+  },
+  "network": {
+    "format-wifi": "󰤢 ",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "format": "{volume}%  {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "ignored-sinks": ["Easy Effects Sink"],
+    "on-click": "pavucontrol",
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+  "group/volume": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider"
+    ]
+  },
+  "custom/lock": {
+    "tooltip": false,
+    "on-click": "sh -c '(sleep 0.5s; hyprlock)' & disown",
+    "format": ""
+  },
+    "later": {
+        "format": "<span class='icon'>{icon}</span> <span class='text'>{text}</span>"
+    }
+
+}
+

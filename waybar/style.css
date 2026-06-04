@@ -1,0 +1,136 @@
+@define-color highlight rgba(117, 241, 250, 1);
+@define-color base #24273a;
+@define-color white #ffffff;
+@define-color blue #8aadf4;
+
+
+* {
+  font-family: JetbrainsMono Nerd Font;
+  font-size: 15px;
+  min-height: 0;
+  border: none;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
+}
+
+window#waybar {
+  background: transparent;
+  color: #ffffff;
+  border-bottom: 1px solid #444444;
+}
+
+#custom-icon {
+    font-size: 25px;
+    padding: 0.5rem 1rem;
+}
+
+#workspaces {
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  margin: 2px 2px 0px 0px;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: @white;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  transition: 0.2s ease-out;
+  border-bottom: 1px solid transparent;
+}
+
+#workspaces button:first-child {
+  /* border-bottom-left-radius: 4px; */
+}
+
+#workspaces button:last-child {
+  /* border-bottom-right-radius: 4px; */
+}
+
+#workspaces button.urgent {
+  border-bottom: 1px solid @blue;
+}
+
+#workspaces button.active {
+  border-bottom: 1px solid @highlight;
+  color: @highlight;
+}
+
+#custom-notifications,
+#custom-icon,
+#custom-weather,
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#pulseaudio,
+#custom-lock,
+#custom-power {
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+
+#clock {
+  color: @white;
+  font-size: 16px;
+  margin-right: 1rem;
+}
+
+#backlight {
+  color: #e5c890;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+#pulseaudio-slider {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 4px;
+}
+
+#pulseaudio-slider slider {
+  all: unset;
+  min-height: 0;
+  min-width: 0;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 5px;
+  min-width: 75px;
+  border-radius: 5px;
+  background: @base;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background: @highlight;
+}
+
+#custom-music {
+  color: @highlight;
+}
+
+#custom-lock {
+  color: @white;
+}
+
+#custom-power {
+  margin-right: 1rem;
+  color: @white;
+}
+
+#tray {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
