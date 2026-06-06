@@ -26,7 +26,7 @@ window#waybar {
 }
 
 #workspaces {
-  font-weight: bold;
+  color: @white;
   font-size: 15px;
   border: none;
   margin: 2px 2px 0px 0px;
@@ -50,12 +50,12 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-  border-bottom: 1px solid @blue;
+  border-bottom: 1px solid @white;
 }
 
 #workspaces button.active {
-  border-bottom: 1px solid @highlight;
-  color: @highlight;
+  border-bottom: 1px solid @white;
+  color: @white;
 }
 
 #custom-notifications,
@@ -117,10 +117,6 @@ window#waybar {
   background: @highlight;
 }
 
-#custom-music {
-  color: @highlight;
-}
-
 #custom-lock {
   color: @white;
 }
@@ -134,3 +130,19 @@ window#waybar {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
+#media {
+  color: @highlight;
+  margin: 7px 0px 7px 80px;
+}
+
+#custom-media-animation {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+#custom-media-now-playing {
+  margin-right: 10px;
+  color: @white;
+}
+

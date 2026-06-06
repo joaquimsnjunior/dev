@@ -1,2 +1,3 @@
-# dev
-dotfiles arch w/ hyprland
+# Workstation Arch 
+
+### Dotfiles arch w/ hyprland

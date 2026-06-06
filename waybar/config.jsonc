@@ -2,36 +2,31 @@
   // Waybar at top layer
   "layer": "top",
   "reload_on_style_change": true,
-
   // Waybar position (top|bottom|left|right)
   "position": "top",
-
   // Waybar height (to be removed for auto height)
   // "height": 10,
-
   "passthrough": false,
   "reload_style_on_change": true,
-
   // Gaps between modules (4px)
   "spacing": 10,
-
   // Gap from the top of the screen
   "margin-top": 0,
   "margin-left": 5,
   "margin-right": 5,
   "margin-bottom": 1,
-
   "modules-left": [
-	  "custom/icon",
-    "clock",
-    "custom/weather",
-    ],
+    "custom/icon",
+    "hyprland/workspaces",
+    "group/media"
+  ],
   "modules-center": [
-    "hyprland/workspaces"
+    "clock"
   ],
   "modules-right": [
     "pulseaudio",
     "pulseaudio/slider",
+    "custom/weather",
     "tray",
     "custom/lock"
   ],
@@ -66,11 +61,16 @@
     "format": "{volume}%  {icon}",
     "format-muted": "",
     "format-icons": {
-      "default": ["", ""]
+      "default": [
+        "",
+        ""
+      ]
     },
     "scroll-step": 1,
-    "ignored-sinks": ["Easy Effects Sink"],
-    "on-click": "pavucontrol",
+    "ignored-sinks": [
+      "Easy Effects Sink"
+    ],
+    "on-click": "pavucontrol"
   },
   "pulseaudio/slider": {
     "min": 0,
@@ -89,9 +89,26 @@
     "on-click": "sh -c '(sleep 0.5s; hyprlock)' & disown",
     "format": ""
   },
-    "later": {
-        "format": "<span class='icon'>{icon}</span> <span class='text'>{text}</span>"
-    }
-
+  "later": {
+    "format": "<span class='icon'>{icon}</span> <span class='text'>{text}</span>"
+  },
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/media-animation",
+      "custom/media-now-playing"
+    ]
+  },
+  "custom/media-now-playing": {
+    "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
+    "escape": true,
+    "tooltip": false,
+    "on-click": "playerctl play-pause",
+    "on-click-middle": "playerctl previous",
+    "on-click-right": "playerctl next"
+  },
+  "custom/media-animation": {
+    "exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
+    "tooltip": false
+  }
 }
-

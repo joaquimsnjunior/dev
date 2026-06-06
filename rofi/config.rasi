@@ -1,3 +1,12 @@
+/*
+* * * * * * * * * * * * * * * * * * * * * * * * *
+* Author: Joaquim Silva                       	*
+* Github: https://github.com/joaquimsnjunior    *										                        	*  		                            *
+* * * * * * * * * * * * * * * * * * * * * * * * *
+*/
+
+/*-----Configuration-----*/
+
 configuration {
   display-drun: "";
   drun-display-format: "{icon} {name}";
@@ -9,14 +18,16 @@ configuration {
 
 @theme "/dev/null"
 
+/*-----Global-----*/
+
 * {
-    bg: #1e1e1eB3;
-        bg-alt: #1e1e1eB3;
+    bg: #151719c4;
+        bg-alt: #151719c4;
     fg: #ffffff;
-        fg-alt: #838383;
+        fg-alt: #b5b5b5;
         background-color: @bg;
     border: 0;
-    border-color: #4ebbf6;
+    border-color: #4444;
     margin: 0;
     padding: 0;
     spacing: 0;
@@ -25,9 +36,10 @@ configuration {
 window {
     width:            480px;     
     background-color: @bg-base;
-    border:           1px;        
+    border:           2px;        
     border-color:     @border-color;
-    padding:          0px;        
+    padding:          0px; 
+    border-radius:    0px;      
 }
 
 mainbox {
