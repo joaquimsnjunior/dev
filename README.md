@@ -2,9 +2,11 @@
 
 Este repositório contém minhas configurações pessoais (dotfiles) para um ambiente de desktop Arch Linux, utilizando [Hyprland](https://hyprland.org/) como compositor Wayland. O objetivo é criar um ambiente de desenvolvimento produtivo, visualmente agradável e altamente customizável.
 
-![preview](assets/hyprland.png)
+![preview](assets/2-setup.png)
 
-![preview](assets/hyprland2.png)
+![preview](assets/waybar.png)
+
+![preview](assets/1-setup.png)
 
 ---
 
@@ -70,7 +72,6 @@ Para uma lista completa de atalhos de teclado, consulte o arquivo [KEYBINDS.md](
 ├── install-scripts/  # Scripts para instalação de drivers e pacotes
 ├── kitty/            # Configuração do terminal Kitty
 ├── mako/             # Configuração do daemon de notificações Mako
-├── nvim/             # Configuração completa do Neovim (Lua)
 ├── rofi/             # Configuração e temas do Rofi
 ├── wal/              # Templates do Pywal para tematização dinâmica
 ├── waybar/           # Configuração e estilos da Waybar
