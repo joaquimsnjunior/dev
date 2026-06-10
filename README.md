@@ -56,13 +56,6 @@ Este repositório contém minhas configurações pessoais (dotfiles) para um amb
 
 ---
 
-## ⌨️ Neovim
-
-A configuração do Neovim está localizada em `nvim/`. Ela é baseada em Lua e utiliza o `lazy.nvim` para gerenciamento de plugins.
-
-Para uma lista completa de atalhos de teclado, consulte o arquivo [KEYBINDS.md](KEYBINDS.md).
-
----
 
 ## 📂 Estrutura do Repositório
 
