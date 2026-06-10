@@ -2,7 +2,6 @@
 
 # "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"
 
-
 animation_frames=("▂▄▆▃" "▄▂▆▃" "▄▆▂▃" "▆▄▂▃" "▆▂▄▃")
 while :; do
   for frame in "${animation_frames[@]}"; do
@@ -15,6 +14,6 @@ while :; do
     else
         echo ""
     fi
-    sleep 0.1
+    sleep 0.3
   done
 done

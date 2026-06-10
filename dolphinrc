@@ -1,0 +1,35 @@
+[DetailsMode]
+PreviewSize=96
+
+[General]
+ShowStatusBar=false
+Version=202
+ViewPropsTimestamp=2026,6,9,14,55,20.742
+
+[IconsMode]
+IconSize=62
+PreviewSize=72
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=38
+
+[MainWindow]
+MenuBar=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=32
+ToolButtonStyle=IconOnly
+
+[PlacesPanel]
+IconSize=38
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail
+
+[Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[UiSettings]
+ColorScheme=BreezeDark

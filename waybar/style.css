@@ -1,36 +1,41 @@
-@define-color highlight rgba(117, 241, 250, 1);
+@define-color highlight rgb(19, 111, 157);
 @define-color base #24273a;
 @define-color white #ffffff;
-@define-color blue #8aadf4;
-
+@define-color blue #136F9D;
 
 * {
   font-family: JetbrainsMono Nerd Font;
+  font-weight: 600;
   font-size: 15px;
   min-height: 0;
   border: none;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-bottom: 0px;
 }
 
 window#waybar {
-  background: transparent;
+  background: #2b2929;
   color: #ffffff;
-  border-bottom: 1px solid #444444;
+  border-bottom: 2px solid #444444;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
 }
 
 #custom-icon {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0.5rem 1rem;
 }
 
 #workspaces {
   color: @white;
-  font-size: 15px;
   border: none;
-  margin: 2px 2px 0px 0px;
-  margin-left: 1rem;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
 }
 
 #workspaces button {
@@ -50,32 +55,36 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-  border-bottom: 1px solid @white;
+  border-bottom: 4px solid @white;
 }
 
 #workspaces button.active {
-  border-bottom: 1px solid @white;
+  border-bottom: 4px solid @white;
   color: @white;
 }
 
 #custom-notifications,
 #custom-icon,
 #custom-weather,
-#custom-music,
 #tray,
 #backlight,
 #clock,
-#pulseaudio,
 #custom-lock,
 #custom-power {
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
+  min-width: 12px;
+  margin: 0 7.5px;
 }
 
+#pulseaudio,
+#custom-music {
+  margin: 1.5px 0;
+  padding: 6px 0;
+  min-width: 0;
+  min-height: 12px;
+}
 
 #clock {
   color: @white;
-  font-size: 16px;
   margin-right: 1rem;
 }
 
@@ -105,7 +114,7 @@ window#waybar {
 }
 
 #pulseaudio-slider trough {
-  min-height: 5px;
+  min-height: 4px;
   min-width: 75px;
   border-radius: 5px;
   background: @base;
@@ -145,4 +154,3 @@ window#waybar {
   margin-right: 10px;
   color: @white;
 }
-

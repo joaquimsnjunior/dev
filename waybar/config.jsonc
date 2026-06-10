@@ -6,14 +6,13 @@
   "position": "top",
   // Waybar height (to be removed for auto height)
   // "height": 10,
+  "width": "100%",
   "passthrough": false,
   "reload_style_on_change": true,
   // Gaps between modules (4px)
   "spacing": 10,
   // Gap from the top of the screen
   "margin-top": 0,
-  "margin-left": 5,
-  "margin-right": 5,
   "margin-bottom": 1,
   "modules-left": [
     "custom/icon",

@@ -3,9 +3,9 @@
 format = """
 [░▒▓](#31363B)\
 [ 󰣇 ](bg:#31363B fg:#EFF0F1)\
-[](bg:#3DAEE9 fg:#31363B)\
+[](bg:#136F9D fg:#31363B)\
 $directory\
-[](fg:#3DAEE9 bg:#2A2E32)\
+[](fg:#136F9D bg:#2A2E32)\
 $git_branch\
 $git_status\
 [](fg:#2A2E32 bg:#232629)\
@@ -20,7 +20,7 @@ $time\
 \n$character"""
 
 [directory]
-style = "fg:#EFF0F1 bg:#3DAEE9"
+style = "fg:#EFF0F1 bg:#136F9D"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -65,11 +65,6 @@ symbol = ""
 style = "bg:#232629"
 format = '[[ $symbol ($version) ](fg:#3DAEE9 bg:#232629)]($style)'
 
-[time]
-disabled = false
-time_format = "%R"
-style = "bg:#1B1E20"
-format = '[[  $time ](fg:#BDC3C7 bg:#1B1E20)]($style)'
 
 [character]
 success_symbol = "[❯](bold #3DAEE9)"
